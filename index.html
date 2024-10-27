@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+</head>
+
+<body>
+
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">Haramis</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Habilidades</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contato</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <figure class="hero-banner img-holder has-before" style="--width: 640; --height: 840;">
+            <img src="/assets/images/perfil_haramis.jpeg" width="640" height="840" alt="Bernard Smith" class="img-cover">
+          </figure>
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">Haramis Cavalcante</p>
+
+            <h1 class="h1 hero-title">Estudante de programação</h1>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class="section skills has-before" id="skills" aria-label="skills"
+        style="background-image: url('/assets/')">
+        <div class="container">
+
+          <div class="skills-content">
+
+            <p class="section-subtitle">Habilidades</p>
+
+            <h2 class="h2 section-title">Habilidades de Programação</h2>
+
+            <p class="section-text">
+              Sou estudante do primeiro período em Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia.
+              e estou sempre em busca de novos desafios para expandir minhas habilidades e aprender mais.
+              Estou empolgado para explorar cada vez mais o universo da tecnologia e desenvolver soluções inovadoras
+              ao longo dessa jornada.
+            </p>
+
+            <ul class="skills-list">
+
+              <li class="skills-item">
+                <div class="wrapper">
+                  <h3 class="skill-title">HTML & CSS</h3>
+
+                  <data class="skill-value" value="65%">65%</data>
+                </div>
+
+                <div class="progress-box">
+                  <div class="progress" style="width: 65%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="wrapper">
+                  <h3 class="skill-title">JavaScript</h3>
+
+                  <data class="skill-value" value="60%">60%</data>
+                </div>
+
+                <div class="progress-box">
+                  <div class="progress" style="width: 60%"></div>
+                </div>
+              </li>
+
+
+            </ul>
+
+          </div>
+          
+          <div class="skills-banner has-before"></div> 
+
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+
+          <div class="contact-content">
+
+            <p class="section-subtitle">Contato</p>
+
+            <h2 class="h2 section-title" style="color: black;">Entre em Contato</h2>
+
+            <p class="section-text">
+              Por favor, preencha o formulário nesta seção para entrar em contato comigo.
+              Ou ligue entre 9:00 e 20:00 (horário de Brasília), de segunda a sexta-feira.
+            </p>
+
+            <ul class="contact-list">
+
+              <li class="contact-item">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+                <a href="tel:+07742691291" class="contact-link">+55 (81) 9948 6187</a>
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                <a href="mailto:smith@gmail.com" class="contact-link">haramis@yahoo.com.br</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <form action="" class="contact-form">
+
+            <input type="text" name="name" aria-label="name" placeholder="Name" required class="input-field">
+
+            <input type="email" name="email_address" aria-label="email" placeholder="Email" required
+              class="input-field">
+
+            <textarea name="message" aria-label="message" placeholder="Message" required class="input-field"></textarea>
+
+            <button type="submit" class="submit-btn">
+              <span class="span">Enviar Mensagem</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+
+          </form>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2024. Todos os direitos reservados por <a href="#" class="copyright-link">Haramis.</a>
+      </p>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="haramis@yahoo.com.br" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
