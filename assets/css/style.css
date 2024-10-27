@@ -903,7 +903,7 @@ textarea.input-field {
     right: 50px;
     width: 410px;
     height: 530px;
-    background-image: url('/assets/images/Animation.gif');
+    background-image: url('assets/images/Animation.gif');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 105%;
